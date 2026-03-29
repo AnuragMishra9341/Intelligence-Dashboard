@@ -1,0 +1,40 @@
+/* src/components/dashboard/RiskMeter.module.css */
+
+.wrap {
+  margin-bottom: 24px;
+}
+
+.meter {
+  height: 12px;
+  background: linear-gradient(90deg, var(--accent3), var(--accent4), var(--accent2));
+  border-radius: 100px;
+  position: relative;
+  margin-top: 12px;
+}
+
+.needle {
+  position: absolute;
+  top: -4px;
+  width: 4px;
+  height: 20px;
+  background: white;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  transition: left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--muted);
+}
+
+.desc {
+  margin-top: 14px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}

@@ -1,0 +1,72 @@
+/* src/components/layout/AppHeader.module.css */
+
+.header {
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(16px);
+  z-index: 100;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoCube {
+  width: 36px;
+  height: 36px;
+  background: var(--accent);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  animation: cubePulse 3s ease-in-out infinite;
+}
+
+@keyframes cubePulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(124, 111, 255, 0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(124, 111, 255, 0); }
+}
+
+.logoText {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: -0.5px;
+}
+
+.logoText span {
+  color: var(--accent);
+}
+
+.logoSub {
+  font-size: 0.6rem;
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+  margin-top: 1px;
+}
+
+.badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  background: rgba(124, 111, 255, 0.15);
+  color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(124, 111, 255, 0.3);
+}

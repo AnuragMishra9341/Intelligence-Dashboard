@@ -1,0 +1,89 @@
+/* src/components/dashboard/InputSection.module.css */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 700px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+.dropZone {
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: rgba(124, 111, 255, 0.03);
+  position: relative;
+}
+
+.dropZone:hover,
+.dragOver {
+  border-color: var(--accent);
+  background: rgba(124, 111, 255, 0.08);
+}
+
+.fileInput {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.dropIcon { font-size: 2rem; margin-bottom: 10px; }
+
+.dropTitle {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.dropSub { color: var(--muted); font-size: 0.8rem; }
+
+.orDivider {
+  text-align: center;
+  padding: 10px 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.sampleBtn {
+  width: 100%;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-family: 'DM Mono', monospace;
+  transition: all 0.2s;
+}
+
+.sampleBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.textarea {
+  width: 100%;
+  height: 200px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  padding: 16px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+  line-height: 1.5;
+}
+
+.textarea:focus { border-color: var(--accent); }

@@ -1,0 +1,23 @@
+/* src/components/dashboard/FullAnalysisPanel.module.css */
+
+.card {
+  margin-bottom: 24px;
+}
+
+.text {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 0.82rem;
+  line-height: 1.75;
+  color: #c0c0d8;
+  white-space: pre-wrap;
+  font-family: 'DM Sans', sans-serif;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.text::-webkit-scrollbar { width: 4px; }
+.text::-webkit-scrollbar-track { background: transparent; }
+.text::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }

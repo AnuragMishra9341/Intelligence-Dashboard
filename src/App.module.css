@@ -1,0 +1,13 @@
+/* src/App.module.css */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.inputSection {
+  margin-bottom: 32px;
+}

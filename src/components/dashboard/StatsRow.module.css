@@ -1,0 +1,41 @@
+/* src/components/dashboard/StatsRow.module.css */
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 700px) {
+  .row { grid-template-columns: repeat(2, 1fr); }
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+.value {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  margin-top: 6px;
+  font-family: 'DM Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.danger .value  { color: var(--accent2); }
+.warning .value { color: var(--accent4); }
+.success .value { color: var(--accent3); }
+.primary .value { color: var(--accent); }
